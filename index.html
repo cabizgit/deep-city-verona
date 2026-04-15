@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep City Verona — Experiences that bite.</title>
+  <meta name="description" content="Deep City Verona: esperienze turistiche luxury e autentiche nella città di Romeo e Giulietta. Scopri Verona come non l'hai mai vissuta.">
+  <meta name="keywords" content="Verona, esperienze, tour, luxury, Romeo Giulietta, Valpolicella, Arena, degustazione vini">
+  <meta name="author" content="Deep City Verona">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Deep City Verona — Experiences that bite.">
+  <meta property="og:description" content="Esperienze turistiche luxury e autentiche nella città di Verona, Italia.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1610574829585-0fc5a279647f?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:url" content="https://deepcityverona.it">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Deep City Verona",
+    "description": "Esperienze turistiche luxury e autentiche nella città di Verona",
+    "url": "https://deepcityverona.it",
+    "telephone": "+39 045 000 0000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Esempio 1",
+      "addressLocality": "Verona",
+      "postalCode": "37121",
+      "addressCountry": "IT"
+    },
+    "image": "https://images.unsplash.com/photo-1610574829585-0fc5a279647f?w=1200&h=630&fit=crop&q=80",
+    "priceRange": "€€€"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigazione principale">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Deep City Verona — Torna in cima">
+        <span class="logo-deep">Deep</span><span class="logo-city">City</span><span class="logo-verona">Verona</span>
+      </a>
+      <ul class="navbar__links" id="navLinks" role="menubar">
+        <li role="none"><a href="#esperienze" role="menuitem" data-i18n="nav_esperienze">Esperienze</a></li>
+        <li role="none"><a href="#chi-siamo" role="menuitem" data-i18n="nav_chi_siamo">Chi Siamo</a></li>
+        <li role="none"><a href="#bespoke" role="menuitem" data-i18n="nav_bespoke">Bespoke</a></li>
+        <li role="none"><a href="#galleria" role="menuitem" data-i18n="nav_galleria">Galleria</a></li>
+        <li role="none"><a href="#contatto" role="menuitem" data-i18n="nav_contatto">Prenota</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <!-- Toggle Lingua -->
+        <button class="btn-lang" id="btnLang" aria-label="Cambia lingua" title="Cambia lingua">
+          <span id="langLabel">EN</span>
+        </button>
+        <!-- Toggle Dark/Light -->
+        <button class="btn-theme" id="btnTheme" aria-label="Cambia tema" title="Cambia tema">
+          <svg class="icon-theme icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-theme icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <!-- Hamburger Mobile -->
+        <button class="navbar__hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__pretitle" data-i18n="hero_pretitle">Deep City Verona presenta</p>
+      <h1 class="hero__title reveal-text">
+        <span class="title-line" data-i18n="hero_title_1">Verona</span>
+        <span class="title-line title-accent" data-i18n="hero_title_2">Deep City</span>
+      </h1>
+      <p class="hero__subtitle" data-i18n="hero_subtitle">Esperienze che lasciano il segno.</p>
+      <div class="hero__ctas">
+        <a href="#esperienze" class="btn btn--primary" data-i18n="hero_cta_1">Scopri le Esperienze</a>
+        <a href="#contatto" class="btn btn--outline" data-i18n="hero_cta_2">Richiedi la tua Esperienza</a>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <svg viewBox="0 0 24 40" width="24" height="40" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="1" width="22" height="38" rx="11"/><line x1="12" y1="8" x2="12" y2="16" class="scroll-line"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NUMERI ===================== -->
+  <section class="numeri" id="numeri">
+    <div class="container">
+      <div class="numeri__grid">
+        <div class="numeri__item reveal">
+          <span class="numeri__value" data-target="200">0</span><span class="numeri__plus">+</span>
+          <p class="numeri__label" data-i18n="num_clienti">Clienti soddisfatti</p>
+        </div>
+        <div class="numeri__item reveal">
+          <span class="numeri__value" data-target="15">0</span><span class="numeri__plus">+</span>
+          <p class="numeri__label" data-i18n="num_esperienze">Esperienze uniche</p>
+        </div>
+        <div class="numeri__item reveal">
+          <span class="numeri__value" data-target="5">0</span>
+          <p class="numeri__label" data-i18n="num_anni">Anni di passione</p>
+        </div>
+        <div class="numeri__item reveal">
+          <span class="numeri__value" data-target="98">0</span><span class="numeri__plus">%</span>
+          <p class="numeri__label" data-i18n="num_rating">Clienti ci raccomandano</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ESPERIENZE ===================== -->
+  <section class="esperienze" id="esperienze">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label" data-i18n="exp_label">Le nostre proposte</p>
+        <h2 class="section-title" data-i18n="exp_title">Esperienze</h2>
+        <p class="section-desc" data-i18n="exp_desc">Ogni esperienza è un viaggio nei segreti di Verona. Scegli quella che risuona con la tua anima.</p>
+      </div>
+
+      <!-- Filtri -->
+      <div class="esperienze__filtri reveal" role="tablist" aria-label="Filtra esperienze per categoria">
+        <button class="filtro active" data-filter="tutti" role="tab" aria-selected="true" data-i18n="filter_all">Tutti</button>
+        <button class="filtro" data-filter="romantico" role="tab" aria-selected="false" data-i18n="filter_romantic">Romantico</button>
+        <button class="filtro" data-filter="storico" role="tab" aria-selected="false" data-i18n="filter_historic">Storico</button>
+        <button class="filtro" data-filter="gastronomico" role="tab" aria-selected="false" data-i18n="filter_gastro">Gastronomico</button>
+        <button class="filtro" data-filter="esclusivo" role="tab" aria-selected="false" data-i18n="filter_vip">Esclusivo VIP</button>
+      </div>
+
+      <!-- Griglia Cards -->
+      <div class="esperienze__grid">
+
+        <!-- Card 1 -->
+        <article class="exp-card reveal" data-category="romantico">
+          <div class="exp-card__image">
+            <img src="https://images.unsplash.com/photo-1648464674642-79469507144b?w=600&h=400&fit=crop&q=80" alt="Il Balcone dei Capuleti — tour romantico a Verona" loading="lazy" width="600" height="400">
+            <span class="exp-card__badge">Romantico</span>
+          </div>
+          <div class="exp-card__body">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h3 class="exp-card__title">Il Balcone dei Capuleti</h3>
+            <p class="exp-card__desc">Un viaggio intimo sulle orme di Romeo e Giulietta, tra vicoli segreti, cortili nascosti e la leggenda più romantica del mondo.</p>
+            <div class="exp-card__meta">
+              <span class="exp-card__duration">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                3h
+              </span>
+              <span class="exp-card__price">da <strong>&euro;90</strong>/coppia</span>
+            </div>
+          </div>
+          <div class="exp-card__hover">
+            <p>Passeggiata al chiaro di luna con guida privata. Include accesso esclusivo a cortili privati e degustazione di vino sul balcone.</p>
+            <a href="#contatto" class="btn btn--small">Prenota ora</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="exp-card reveal" data-category="gastronomico">
+          <div class="exp-card__image">
+            <img src="https://images.unsplash.com/photo-1639757664366-83a495f4a9d9?w=600&h=400&fit=crop&q=80" alt="Valpolicella Segreto — degustazione vini in cantina privata" loading="lazy" width="600" height="400">
+            <span class="exp-card__badge">Gastronomico</span>
+          </div>
+          <div class="exp-card__body">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v4M16 2v4M12 2v8M8 6c0 0-4 2-4 8v6h16v-6c0-6-4-8-4-8"/><line x1="4" y1="20" x2="20" y2="20"/></svg>
+            </div>
+            <h3 class="exp-card__title">Valpolicella Segreto</h3>
+            <p class="exp-card__desc">Degustazione privata in cantine storiche della Valpolicella. Amarone, Recioto e segreti millenari raccontati dal produttore.</p>
+            <div class="exp-card__meta">
+              <span class="exp-card__duration">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                4h
+              </span>
+              <span class="exp-card__price">da <strong>&euro;120</strong>/persona</span>
+            </div>
+          </div>
+          <div class="exp-card__hover">
+            <p>Trasporto privato, visita a 2 cantine selezionate, degustazione di 6 vini premium con tagliere di prodotti locali.</p>
+            <a href="#contatto" class="btn btn--small">Prenota ora</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="exp-card reveal" data-category="storico">
+          <div class="exp-card__image">
+            <img src="https://images.unsplash.com/photo-1753628307830-105f1ad4bb96?w=600&h=400&fit=crop&q=80" alt="Verona Medievale — camminata storica guidata" loading="lazy" width="600" height="400">
+            <span class="exp-card__badge">Storico</span>
+          </div>
+          <div class="exp-card__body">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/><rect x="9" y="9" width="2" height="2"/><rect x="13" y="9" width="2" height="2"/></svg>
+            </div>
+            <h3 class="exp-card__title">Verona Medievale</h3>
+            <p class="exp-card__desc">Attraversa secoli di storia tra le mura scaligère, i ponti romani e le piazze dove il tempo si è fermato.</p>
+            <div class="exp-card__meta">
+              <span class="exp-card__duration">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                2h
+              </span>
+              <span class="exp-card__price">da <strong>&euro;65</strong>/persona</span>
+            </div>
+          </div>
+          <div class="exp-card__hover">
+            <p>Guida storica esperta, accesso a punti panoramici riservati, racconti di intrighi medievali e leggende locali.</p>
+            <a href="#contatto" class="btn btn--small">Prenota ora</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="exp-card reveal" data-category="esclusivo">
+          <div class="exp-card__image">
+            <img src="https://images.unsplash.com/photo-1574509322729-fdbcea67df6f?w=600&h=400&fit=crop&q=80" alt="Arena al Tramonto — accesso esclusivo all'Arena di Verona" loading="lazy" width="600" height="400">
+            <span class="exp-card__badge">Esclusivo VIP</span>
+          </div>
+          <div class="exp-card__body">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="exp-card__title">Arena al Tramonto</h3>
+            <p class="exp-card__desc">L'Arena di Verona come non l'hai mai vista: accesso esclusivo prima dell'apertura, con il sole che incendia la pietra millenaria.</p>
+            <div class="exp-card__meta">
+              <span class="exp-card__duration">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                1.5h
+              </span>
+              <span class="exp-card__price">da <strong>&euro;180</strong>/persona</span>
+            </div>
+          </div>
+          <div class="exp-card__hover">
+            <p>Visita privata al tramonto con storico dell'arte, aperitivo in arena e fotografia professionale inclusa.</p>
+            <a href="#contatto" class="btn btn--small">Prenota ora</a>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="exp-card reveal" data-category="gastronomico">
+          <div class="exp-card__image">
+            <img src="https://images.unsplash.com/photo-1528751086790-81a64658fc53?w=600&h=400&fit=crop&q=80" alt="Mercati e Cucina — tour gastronomico e cooking class" loading="lazy" width="600" height="400">
+            <span class="exp-card__badge">Gastronomico</span>
+          </div>
+          <div class="exp-card__body">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3 class="exp-card__title">Mercati e Cucina</h3>
+            <p class="exp-card__desc">Dal mercato alla tavola: scegli gli ingredienti con uno chef locale e impara i segreti della cucina veronese.</p>
+            <div class="exp-card__meta">
+              <span class="exp-card__duration">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                5h
+              </span>
+              <span class="exp-card__price">da <strong>&euro;150</strong>/persona</span>
+            </div>
+          </div>
+          <div class="exp-card__hover">
+            <p>Tour del mercato di Piazza Erbe, selezione ingredienti, cooking class in cucina privata, pranzo con vini abbinati.</p>
+            <a href="#contatto" class="btn btn--small">Prenota ora</a>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="exp-card reveal" data-category="esclusivo">
+          <div class="exp-card__image">
+            <img src="https://images.unsplash.com/photo-1750535492827-2bc16ce9a90f?w=600&h=400&fit=crop&q=80" alt="Verona dall'Alto — terrazza panoramica con aperitivo" loading="lazy" width="600" height="400">
+            <span class="exp-card__badge">Esclusivo VIP</span>
+          </div>
+          <div class="exp-card__body">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="exp-card__title">Verona dall'Alto</h3>
+            <p class="exp-card__desc">Una terrazza panoramica riservata solo per te, con un aperitivo d'autore mentre il cielo di Verona si tinge d'oro.</p>
+            <div class="exp-card__meta">
+              <span class="exp-card__duration">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                2h
+              </span>
+              <span class="exp-card__price">da <strong>&euro;200</strong>/coppia</span>
+            </div>
+          </div>
+          <div class="exp-card__hover">
+            <p>Location esclusiva con vista a 360&deg;, cocktail artigianali, tagliere gourmet e servizio fotografico opzionale.</p>
+            <a href="#contatto" class="btn btn--small">Prenota ora</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CHI SIAMO ===================== -->
+  <section class="chi-siamo" id="chi-siamo">
+    <div class="container">
+      <div class="chi-siamo__grid">
+        <div class="chi-siamo__image reveal">
+          <img src="https://images.unsplash.com/photo-1447279506476-3faec8071eee?w=700&h=900&fit=crop&q=80" alt="Le guide di Deep City Verona — passione e autenticità" loading="lazy" width="700" height="900">
+          <div class="chi-siamo__image-accent"></div>
+        </div>
+        <div class="chi-siamo__text reveal">
+          <p class="section-label" data-i18n="about_label">La nostra storia</p>
+          <h2 class="section-title" data-i18n="about_title">Chi Siamo</h2>
+          <p class="chi-siamo__lead" data-i18n="about_lead">Non siamo guide turistiche. Siamo veronesi che hanno trasformato la propria ossessione per questa città in un mestiere.</p>
+          <p data-i18n="about_p1">Deep City Verona nasce dall'idea che Verona meriti di essere scoperta come un segreto sussurrato, non urlato da un megafono. Ogni nostra esperienza è progettata come un racconto: ha un inizio, una tensione, un culmine e un ricordo che non si cancella.</p>
+          <p data-i18n="about_p2">Le nostre guide sono storici, sommelier, chef e artisti — tutti nati e cresciuti tra queste mura. Conoscono i vicoli dove Shakespeare non è mai arrivato, le cantine dove il silenzio ha il sapore dell'Amarone, i tetti dove il tramonto diventa privato.</p>
+          <div class="chi-siamo__valori">
+            <div class="valore">
+              <div class="valore__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4 data-i18n="val_1_title">Autenticità</h4>
+              <p data-i18n="val_1_desc">Solo esperienze vere, mai turistiche.</p>
+            </div>
+            <div class="valore">
+              <div class="valore__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <h4 data-i18n="val_2_title">Esclusività</h4>
+              <p data-i18n="val_2_desc">Piccoli gruppi, grandi emozioni.</p>
+            </div>
+            <div class="valore">
+              <div class="valore__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </div>
+              <h4 data-i18n="val_3_title">Cura del dettaglio</h4>
+              <p data-i18n="val_3_desc">Ogni minuto è pensato per te.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BESPOKE ===================== -->
+  <section class="bespoke" id="bespoke">
+    <div class="bespoke__overlay"></div>
+    <div class="container">
+      <div class="bespoke__content reveal">
+        <p class="section-label section-label--light" data-i18n="bespoke_label">Su misura</p>
+        <h2 class="section-title section-title--light" data-i18n="bespoke_title">La tua Verona, come nessun altro l'ha mai vissuta.</h2>
+        <p class="bespoke__text" data-i18n="bespoke_text">Hai un'idea impossibile? Un anniversario da rendere indimenticabile? Una proposta di matrimonio che deve essere perfetta? Raccontaci il tuo sogno. Noi lo trasformeremo in un'esperienza che esiste solo per te, in una città che sembra fatta apposta per i sogni.</p>
+        <p class="bespoke__tagline" data-i18n="bespoke_tagline">Nessun catalogo. Nessun compromesso. Solo il tuo desiderio, realizzato.</p>
+        <a href="#contatto" class="btn btn--gold" data-i18n="bespoke_cta">Crea la tua esperienza</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RECENSIONI ===================== -->
+  <section class="recensioni" id="recensioni">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label" data-i18n="rev_label">Voci dei viaggiatori</p>
+        <h2 class="section-title" data-i18n="rev_title">Dicono di noi</h2>
+      </div>
+      <div class="recensioni__grid">
+
+        <blockquote class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 stelle su 5">
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+          </div>
+          <p class="testimonial__quote">&ldquo;Non era un tour. Era come essere rapiti da Verona stessa. La nostra guida ci ha portato in luoghi che non esistono su nessuna mappa. Un'esperienza che ci ha cambiato.&rdquo;</p>
+          <footer class="testimonial__author">
+            <cite class="testimonial__name">Charlotte & James W.</cite>
+            <span class="testimonial__origin">Londra, Regno Unito</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 stelle su 5">
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+          </div>
+          <p class="testimonial__quote">&ldquo;La degustazione in Valpolicella è stata un viaggio nel tempo. Il produttore ci ha aperto la sua cantina come fosse casa sua. Abbiamo pianto di gioia con un bicchiere di Amarone in mano.&rdquo;</p>
+          <footer class="testimonial__author">
+            <cite class="testimonial__name">Hiroshi T.</cite>
+            <span class="testimonial__origin">Tokyo, Giappone</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial reveal">
+          <div class="testimonial__stars" aria-label="5 stelle su 5">
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+          </div>
+          <p class="testimonial__quote">&ldquo;Ho organizzato una proposta di matrimonio tramite Deep City. Hanno trasformato una terrazza segreta in un sogno con candele, musicisti e Prosecco. Lei ha detto s&igrave;, ovviamente.&rdquo;</p>
+          <footer class="testimonial__author">
+            <cite class="testimonial__name">Marcus K.</cite>
+            <span class="testimonial__origin">Berlino, Germania</span>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERIA ===================== -->
+  <section class="galleria" id="galleria">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label" data-i18n="gal_label">Frammenti di Verona</p>
+        <h2 class="section-title" data-i18n="gal_title">Galleria</h2>
+      </div>
+      <div class="galleria__grid">
+        <figure class="galleria__item galleria__item--tall reveal" data-caption="Arena di Verona al tramonto">
+          <img src="https://images.unsplash.com/photo-1567272516906-4dd481933016?w=600&h=800&fit=crop&q=80" alt="Arena di Verona al tramonto" loading="lazy" width="600" height="800">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="Vicoli del centro storico">
+          <img src="https://images.unsplash.com/photo-1648050890877-89249e66c9b1?w=600&h=400&fit=crop&q=80" alt="Vicoli del centro storico di Verona" loading="lazy" width="600" height="400">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="Degustazione Valpolicella">
+          <img src="https://images.unsplash.com/photo-1757949087011-cfab519ca1f6?w=600&h=400&fit=crop&q=80" alt="Degustazione di vini in Valpolicella" loading="lazy" width="600" height="400">
+        </figure>
+        <figure class="galleria__item galleria__item--tall reveal" data-caption="Ponte Pietra di notte">
+          <img src="https://images.unsplash.com/photo-1750685591784-40e5fa596f5a?w=600&h=800&fit=crop&q=80" alt="Ponte Pietra illuminato di notte" loading="lazy" width="600" height="800">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="Piazza Erbe al mattino">
+          <img src="https://images.unsplash.com/photo-1741878186841-c8a2620d20e1?w=600&h=400&fit=crop&q=80" alt="Piazza Erbe al mattino presto" loading="lazy" width="600" height="400">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="Cucina veronese">
+          <img src="https://images.unsplash.com/photo-1763917802050-deb1399e1399?w=600&h=400&fit=crop&q=80" alt="Piatti della cucina tradizionale veronese" loading="lazy" width="600" height="400">
+        </figure>
+        <figure class="galleria__item galleria__item--wide reveal" data-caption="Vista panoramica da Castel San Pietro">
+          <img src="https://images.unsplash.com/photo-1707405878166-4874972e0796?w=800&h=400&fit=crop&q=80" alt="Vista panoramica di Verona da Castel San Pietro" loading="lazy" width="800" height="400">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="Dettagli architettonici">
+          <img src="https://images.unsplash.com/photo-1569255195331-ec1d0863ffff?w=600&h=400&fit=crop&q=80" alt="Dettagli architettonici medievali" loading="lazy" width="600" height="400">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="Il Balcone di Giulietta">
+          <img src="https://images.unsplash.com/photo-1509715450465-330fc403205f?w=600&h=400&fit=crop&q=80" alt="Il celebre balcone di Giulietta" loading="lazy" width="600" height="400">
+        </figure>
+        <figure class="galleria__item galleria__item--tall reveal" data-caption="Torre dei Lamberti">
+          <img src="https://images.unsplash.com/photo-1567426681689-5645da216ba8?w=600&h=800&fit=crop&q=80" alt="Torre dei Lamberti al crepuscolo" loading="lazy" width="600" height="800">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="Aperitivo con vista">
+          <img src="https://images.unsplash.com/photo-1750665645097-765c958d2332?w=600&h=400&fit=crop&q=80" alt="Aperitivo su terrazza panoramica" loading="lazy" width="600" height="400">
+        </figure>
+        <figure class="galleria__item reveal" data-caption="L'Adige al tramonto">
+          <img src="https://images.unsplash.com/photo-1677447807174-60a70de4a63e?w=600&h=400&fit=crop&q=80" alt="Il fiume Adige al tramonto" loading="lazy" width="600" height="400">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizzatore immagini" hidden>
+    <button class="lightbox__close" aria-label="Chiudi">&times;</button>
+    <button class="lightbox__prev" aria-label="Immagine precedente">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lightbox__next" aria-label="Immagine successiva">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <img class="lightbox__img" src="" alt="">
+      <p class="lightbox__caption"></p>
+    </div>
+  </div>
+
+  <!-- ===================== CONTATTO / BOOKING ===================== -->
+  <section class="contatto" id="contatto">
+    <div class="container">
+      <div class="contatto__grid">
+        <div class="contatto__info reveal">
+          <p class="section-label" data-i18n="contact_label">Inizia il viaggio</p>
+          <h2 class="section-title" data-i18n="contact_title">Prenota la tua esperienza</h2>
+          <p data-i18n="contact_desc">Compila il modulo e riceverai una risposta personale entro 24 ore. Oppure scrivici direttamente su WhatsApp per una risposta immediata.</p>
+        </div>
+
+        <form class="form reveal" id="bookingForm" novalidate>
+          <div class="form__group">
+            <label for="formNome" data-i18n="form_name">Nome completo *</label>
+            <input type="text" id="formNome" name="nome" required autocomplete="name" placeholder="Il tuo nome">
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+          <div class="form__group">
+            <label for="formEmail" data-i18n="form_email">Email *</label>
+            <input type="email" id="formEmail" name="email" required autocomplete="email" placeholder="la.tua@email.com">
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+          <div class="form__group">
+            <label for="formTelefono" data-i18n="form_phone">Telefono (opzionale)</label>
+            <input type="tel" id="formTelefono" name="telefono" autocomplete="tel" placeholder="+39 ...">
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+          <div class="form__group">
+            <label for="formEsperienza" data-i18n="form_experience">Esperienza di interesse *</label>
+            <select id="formEsperienza" name="esperienza" required>
+              <option value="" data-i18n="form_select_default">Seleziona un'esperienza</option>
+              <option value="balcone">Il Balcone dei Capuleti</option>
+              <option value="valpolicella">Valpolicella Segreto</option>
+              <option value="medievale">Verona Medievale</option>
+              <option value="arena">Arena al Tramonto</option>
+              <option value="mercati">Mercati e Cucina</option>
+              <option value="alto">Verona dall'Alto</option>
+              <option value="bespoke" data-i18n="form_select_bespoke">Esperienza Personalizzata</option>
+            </select>
+            <span class="form__error" aria-live="polite"></span>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="formData" data-i18n="form_date">Data preferita *</label>
+              <input type="date" id="formData" name="data" required>
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+            <div class="form__group">
+              <label for="formPersone" data-i18n="form_people">Numero persone *</label>
+              <input type="number" id="formPersone" name="persone" min="1" max="20" required placeholder="2">
+              <span class="form__error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="formNote" data-i18n="form_notes">Note speciali</label>
+            <textarea id="formNote" name="note" rows="4" placeholder="Occasioni speciali, allergie, richieste particolari..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">Invia Richiesta</button>
+        </form>
+
+        <!-- Messaggio conferma -->
+        <div class="form-success" id="formSuccess" hidden>
+          <div class="form-success__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 data-i18n="form_success_title">Richiesta inviata!</h3>
+          <p data-i18n="form_success_desc">Grazie per averci contattato. Riceverai una risposta personale entro 24 ore. L'avventura sta per iniziare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label" data-i18n="faq_label">Hai domande?</p>
+        <h2 class="section-title" data-i18n="faq_title">Domande Frequenti</h2>
+      </div>
+      <div class="faq__list">
+
+        <details class="faq__item reveal">
+          <summary class="faq__question" data-i18n="faq_q1">In quali lingue sono disponibili le esperienze?</summary>
+          <div class="faq__answer">
+            <p data-i18n="faq_a1">Le nostre esperienze sono disponibili in italiano, inglese, francese, tedesco e spagnolo. Per altre lingue, contattateci e faremo il possibile per accontentarvi.</p>
+          </div>
+        </details>
+
+        <details class="faq__item reveal">
+          <summary class="faq__question" data-i18n="faq_q2">Come posso prenotare un'esperienza?</summary>
+          <div class="faq__answer">
+            <p data-i18n="faq_a2">Puoi prenotare compilando il modulo di contatto su questo sito, scrivendoci su WhatsApp o inviando un'email a info@deepcityverona.it. Riceverai conferma entro 24 ore.</p>
+          </div>
+        </details>
+
+        <details class="faq__item reveal">
+          <summary class="faq__question" data-i18n="faq_q3">Qual è la politica di cancellazione?</summary>
+          <div class="faq__answer">
+            <p data-i18n="faq_a3">Cancellazione gratuita fino a 48 ore prima dell'esperienza. Tra 48 e 24 ore, viene trattenuto il 50%. Meno di 24 ore: nessun rimborso. In caso di maltempo, riprogrammiamo gratuitamente.</p>
+          </div>
+        </details>
+
+        <details class="faq__item reveal">
+          <summary class="faq__question" data-i18n="faq_q4">Qual è il numero minimo di partecipanti?</summary>
+          <div class="faq__answer">
+            <p data-i18n="faq_a4">La maggior parte delle nostre esperienze parte da 2 persone. Per esperienze private o per singoli viaggiatori, contattateci per un preventivo personalizzato.</p>
+          </div>
+        </details>
+
+        <details class="faq__item reveal">
+          <summary class="faq__question" data-i18n="faq_q5">Le esperienze sono disponibili tutto l'anno?</summary>
+          <div class="faq__answer">
+            <p data-i18n="faq_a5">Sì, operiamo tutto l'anno. Alcune esperienze stagionali (come "Arena al Tramonto") hanno disponibilità limitata nei mesi invernali. Consigliamo di prenotare con almeno una settimana di anticipo.</p>
+          </div>
+        </details>
+
+        <details class="faq__item reveal">
+          <summary class="faq__question" data-i18n="faq_q6">Posso personalizzare un'esperienza esistente?</summary>
+          <div class="faq__answer">
+            <p data-i18n="faq_a6">Assolutamente. Ogni esperienza può essere adattata alle vostre esigenze: durata, tappe, esigenze alimentari, accessibilità. Basta indicarlo nelle note al momento della prenotazione o scegliere l'opzione "Bespoke".</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo" aria-label="Deep City Verona — Torna in cima">
+            <span class="logo-deep">Deep</span><span class="logo-city">City</span><span class="logo-verona">Verona</span>
+          </a>
+          <p class="footer__tagline">Experiences that bite.</p>
+          <div class="footer__social">
+            <!-- Instagram -->
+            <a href="#" aria-label="Seguici su Instagram" class="footer__social-link">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <!-- TripAdvisor -->
+            <a href="#" aria-label="Recensioni su TripAdvisor" class="footer__social-link">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="14" r="3"/><circle cx="16" cy="14" r="3"/><circle cx="8" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="14" r="1" fill="currentColor" stroke="none"/><path d="M12 5c-4 0-7.5 2-9 4h3a5 5 0 016-2.5A5 5 0 0118 9h3c-1.5-2-5-4-9-4z"/></svg>
+            </a>
+            <!-- Google -->
+            <a href="#" aria-label="Profilo Google Business" class="footer__social-link">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.35 11.1H12v2.85h5.35c-.5 2.5-2.6 4.05-5.35 4.05a6 6 0 110-12 5.7 5.7 0 013.8 1.45l2.15-2.15A9.5 9.5 0 0012 2.5 9.5 9.5 0 1021.35 11.1z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="#esperienze">Esperienze</a></li>
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li><a href="#bespoke">Bespoke</a></li>
+            <li><a href="#galleria">Galleria</a></li>
+            <li><a href="#contatto">Prenota</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Esperienze</h4>
+          <ul>
+            <li><a href="#contatto">Il Balcone dei Capuleti</a></li>
+            <li><a href="#contatto">Valpolicella Segreto</a></li>
+            <li><a href="#contatto">Verona Medievale</a></li>
+            <li><a href="#contatto">Arena al Tramonto</a></li>
+            <li><a href="#contatto">Mercati e Cucina</a></li>
+            <li><a href="#contatto">Verona dall'Alto</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Legale</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Termini e Condizioni</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Deep City Verona. Tutti i diritti riservati Pietro Cabianca.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== WHATSAPP FLOATING ===================== -->
+  <a href="https://wa.me/390450000000?text=Ciao%2C%20vorrei%20informazioni%20sulle%20vostre%20esperienze%20a%20Verona" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
